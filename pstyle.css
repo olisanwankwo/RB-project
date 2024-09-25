@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: .1rem;
+    background-color: #f2f3f4;
+}
+
+
+.container{
+    height: 100%;
+    background-color: #fff;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.hero-container{
+  width: 500px;
+  height: 100%;
+  background-color: #0b1338;
+  background-image: url('roadside.jpeg');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 .6rem;
+  color: #fff;
+}
+
+.hero-container header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.hero-container main{
+    width: 100%;
+    height: 50%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container footer{
+    width: 100%;
+    height: 10%;
+    /* margin-bottom: -20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bfbfc0 ;
+}
+
+.hero-container footer img{
+    height: auto;
+    width: 25px;
+    padding-left: 10px;
+    }
+
+.hero-container header img{
+    width: 200px;
+}
+
+.hero-container main .p1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.hero-container main .p2{
+    margin-top: 20px;
+    margin-right: 80px;
+    font-size: small;
+    color: #bfbfc0;
+}
+
+.form-container{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+font-family: sans-serif;
+/* padding: 10px 12px; */
+
+}
+
+
+.form-container header{
+    width: 100%;
+    height: 20em;
+}
+
+/* .form-container header img {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    margin-top: 1px;
+    align-items: center;
+    padding: 1.5rem;
+} */
+
+.form-container-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.form-container p a{
+color:  darkcyan ;
+text-decoration: none;
+}
+
+.footer-links-container a{
+color: #bfbfc0;
+text-decoration: none;
+}
+.hiddenlink {
+display: flex; 
+justify-content: end;
+}
+
+.toplink {
+    display: flex;
+    justify-content: end;
+}
+/* input{
+width: 100%;
+height: 100%;
+} */
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .hero-container {
+        display: none;
+    }
+
+    .input1{
+        width: 150%;
+    }
+    .input2{
+        width: 150%;
+    }
+    .input3{
+        width: 150%;
+    }
+    .button{
+        width: 150%;
+    }
+
+    .switch{
+        width: 300px;
+        
+    }
+
+    .hiddenlink{
+        display: flex;
+        justify-content: center;
+        /* margin-top: -10px; */
+    }
+
+    .toplink{
+        display: none;
+    }
+
+    
+    /* .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+}
+
+@media (min-width: 600px) {
+    .hero-container{
+        display: flex;
+    }
+    .form-container{
+        width: 100%;
+        
+    }
+
+    .formmain{
+        margin-top: 100px;
+    }
+
+    .form-container img{
+        display: none;
+    }
+    .hide-image{
+        display: none;
+    }
+
+    .input1{
+        width: 150%;
+    }
+    .input2{
+        width: 150%;
+    }
+    .input3{
+        width: 150%;
+    }
+    .button{
+        width: 150%;
+    }
+
+    .switch{
+        width: 300px;
+    }
+
+    .hiddenlink{
+        display: none;
+    }
+
+}
